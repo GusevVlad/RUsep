@@ -1,6 +1,10 @@
+import Pkg
+Pkg.add("NLsolve"); using NLsolve
+
 module RUsep
 
 using Genie, Logging, LoggingExtras
+
 
 function main()
   Core.eval(Main, :(const UserApp = $(@__MODULE__)))
